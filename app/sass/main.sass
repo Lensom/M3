@@ -26,10 +26,6 @@
 	color: #666
 	opacity: 1
 
-// input:focus:required:invalid
-// 	border: 1px solid red
-// 	outline: none
-// 	box-shadow: none
 input:required:valid
 	border: 1px solid green
 	box-shadow: none
@@ -135,7 +131,6 @@ button
 .main
 	font-family: $default-font
 	font-size: 34px
-	// line-height: 32px
 	line-height: 40px
 	color: $hcolor
 	text-transform: uppercase
@@ -169,7 +164,6 @@ button
 	img
 		position: absolute
 		top: 14px
-		// top: 25px
 		left: 21.9%
 	.description
 		font-family: $medium-font
@@ -264,9 +258,7 @@ header
 		display: flex
 		justify-content: space-between
 		background-color: $white
-		// fixed
 		max-width: 1322px
-		// padding: 0 30px		
 		margin: 0 auto
 		.header-top
 			display: flex
@@ -280,41 +272,46 @@ header
 			padding-top: 32px
 			transition-property: padding-top
 			transition-duration: .7s
-			.logo
+			.custom-logo-link
 				z-index: 9999
 		.logo-block.animate
 			padding-top: 15px			
 		.nav-block
 			.menu
-				// width: 514px
 				height: 100%
 				display: flex
 				border-right: 1px solid #eaeaea	
 				padding-bottom: 4px
 				margin-left: 80px
-
-				.list-inline-item
+				padding-left: 0
+				list-style-type: none
+				.menu-item
 					height: 100%
 					margin-right: 65px
-					padding-top: 48px
-					padding-bottom: 22px
+					// padding-top: 48px
+					// padding-bottom: 22px
 					transition-property: padding-top, padding-bottom
 					transition-duration: .7s
 					&:hover
 						border-bottom: 2px solid #1d1d1d
 					&:nth-child(2)
 						margin-right: 60px		
-					.menu-link
+					a
 						display: flex
 						font-size: 11px
 						color: $hcolor
 						font-family: $default-font
 						text-transform: uppercase
 						display: inline-block
+						height: 100%
+						padding-top: 54px
+						padding-bottom: 24px
 						text-decoration: none
-				.list-inline-item.animate
-					padding-top: 30px
-					padding-bottom: 5px
+						transition-property: padding-top, padding-bottom
+						transition-duration: .7s
+					a.animate
+						padding-top: 30px
+						padding-bottom: 5px
 						
 				.active
 					border-bottom: 2px solid #1d1d1d
@@ -455,24 +452,14 @@ header
 		.owl-stage-outer
 			// padding: 30px 30px 0
 		.owl-nav
-			// margin: 0 auto
 			text-align: center
 		p
 			font-family: $medium-font
 			font-size: 14px
 			color: $hcolor
-			// padding-left: 46px
 			padding-top: 23px
 			position: relative
 			margin-bottom: 24px
-			// &:before
-			// 	content: ''
-			// 	position: absolute
-			// 	top: 72%
-			// 	left: 0
-			// 	background-image: url(../img/before-line-color.png)
-			// 	width: 27px
-			// 	height: 2px
 			img
 				width: 27px
 				height: 2px
@@ -493,10 +480,6 @@ header
 			position: absolute
 			left: 0
 			margin-top: 90px
-			// margin-top: 60px
-		// .owl-item
-		// 	img
-		// 		width: auto
 
 		
 
@@ -552,7 +535,6 @@ header
 	.price-main
 		display: flex
 		justify-content: space-around
-		// border: 1px solid $inputborder
 		max-width: 994px
 		margin: 0 auto
 		flex-wrap: wrap
@@ -562,8 +544,7 @@ header
 			flex-direction: column
 			align-items: center
 			width: 33.3%
-			padding-top: 65px
-			padding-bottom: 35px
+			padding: 65px 15px 35px
 			border: 1px solid $inputborder
 		h3
 			font-family: $default-font
@@ -609,6 +590,8 @@ header
 			font-size: 14px
 			line-height: 26px
 			color: $pcolor
+			max-width: 800px
+			margin: 0 auto
 			margin-bottom: 36px
 
 
@@ -686,7 +669,6 @@ header
 				line-height: 20px
 				text-decoration: none
 				padding: 0
-				// border-bottom: 1px solid #fff
 				padding-top: 30px
 				margin-bottom: 35px
 				white-space: inherit
@@ -713,8 +695,6 @@ header
 					position: relative
 					z-index: 111
 					cursor: pointer
-					
-
 	.call-block
 		margin-top: 60px
 		text-align: center
@@ -726,6 +706,16 @@ header
 			&:hover
 				background-color: $hcolor
 				color: #ffffff
+
+.divider
+	.fa-minus
+		display: none
+.show + .divider 
+	.fa-minus
+		display: inline-block
+	.fa-plus
+		display: none
+
 
 .press
 	padding-top: 70px	
@@ -760,7 +750,6 @@ header
 			align-items: center
 			justify-content: space-between
 			flex: 1 1 0
-			// border: 1px solid $inputborder
 			padding-top: 52px
 			padding-bottom: 44px
 			height: 375px
@@ -770,7 +759,6 @@ header
 			color: $hcolor
 			text-decoration: none
 			text-transform: uppercase
-			// border-right: 0
 			.img-wrapper
 				height: 185px
 				display: flex
@@ -1030,36 +1018,4 @@ input:focus ~ .bar:before, input:focus ~ .bar:after
 				left: 598px
 
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 1380px)
-
-	.subtitle
-		.description
-			&:before
-				left: 44%
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 1120px)
-
-	.subtitle
-		.description
-			&:before
-				left: 44%
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 768px)
-	.subtitle
-		.description
-			&:before
-				left: 40%
-				width: 200px
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 568px)
-	.subtitle
-		.description
-			&:before
-				left: 38%
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 480px)
-	.subtitle
-		.description
-			&:before
-				left: 36%
 @import "media" // Всегда в конце

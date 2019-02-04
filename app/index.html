@@ -19,8 +19,9 @@
   <meta name="msapplication-navbutton-color" content="#000">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="css/fontawesome.min.css"> -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.min.css">
@@ -30,45 +31,47 @@
 
 <body>
 
-  <header>
+  <header id="header">
     <div class="wrapper">
       <div class="content fixed-top">
         <div class="main-navigation">
 
           <div class="header-top">
             <div class="logo-block">
-              <a href="index.html" class="logo"><img src="img/logotype.png" alt="M3"></a>
+              <a href="#header" class="custom-logo-link" rel="home" itemprop="url">
+                <img width="68" height="47" src="img/logotype.png" class="custom-logo" alt="Современный дизайн интерьера | Услуги дизайнера интерьера" itemprop="logo">
+              </a>
               <nav class="menu-wrapper">
                 <button class="menu-btn">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
                 </button>
                 <ul class="menu">
                   <li class="menu-item">
-                    <a href="#et1" class="menu-link">Портфолио</a>
+                    <a href="#et1">Портфолио</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#et2" class="menu-link">Отзывы</a>
+                    <a href="#et2">Отзывы</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#et3" class="menu-link">Консультация</a>
+                    <a href="#et3">Консультация</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#et4" class="menu-link">О нас</a>
+                    <a href="#et4">О нас</a>
                   </li>
                 </ul>
               </nav>
             </div>
             <div class="nav-block">
-              <ul class="menu list-inline">
-                <li class="list-inline-item active"><a href="#et1" class="menu-link">Портфолио</a>
+              <ul class="menu">
+                <li class="menu-item active"><a href="#et1">Портфолио</a>
                 </li>
-                <li class="list-inline-item"><a href="#et2" class="menu-link">Отзывы</a>
+                <li class="menu-item"><a href="#et2">Отзывы</a>
                 </li>
-                <li class="list-inline-item"><a href="#et3" class="menu-link">Консультация</a>
+                <li class="menu-item"><a href="#et3">Консультация</a>
                 </li>
-                <li class="list-inline-item"><a href="#et4" class="menu-link">О нас</a>
+                <li class="menu-item"><a href="#et4">О нас</a>
               </ul>
             </div>
           </div>
@@ -104,8 +107,6 @@
         <h1 class="main">
           Ремонт квартиры &#171;под ключ&#187;
           <br>
-          <!-- <span class="sub-main">при заказе сейчас авторский проект в подарок</span> -->
-          <!-- <br> -->
           <span class="sub-price">за 8 000 грн./м.кв</span>
         </h1>
       </div>
@@ -185,56 +186,56 @@
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-1-full.jpg">
-              <img src="img/block3-1.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Внутренняя отделка в г. Одесса под ключ</p>
+              <img src="img/block3-1.png" class="gallery-img" alt="Внутренняя отделка в г. Одесса под ключ">
+              <p><img src="img/before-line-color.png" alt="before">Внутренняя отделка в г. Одесса под ключ</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-2-full.jpg">
-              <img src="img/block3-2.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Внутренняя отделка в г. Одесса под ключ</p>
+              <img src="img/block3-2.png" class="gallery-img" alt="Внутренняя отделка в г. Одесса под ключ">
+              <p><img src="img/before-line-color.png" alt="before">Внутренняя отделка в г. Одесса под ключ</p>
             </a>
           </div>
         </div>
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-2-full.jpg">
-              <img src="img/block3-2.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Ремонт ванной под ключ в хрущевке г. Киев</p>
+              <img src="img/block3-2.png" class="gallery-img" alt="Ремонт ванной под ключ в хрущевке г. Киев">
+              <p><img src="img/before-line-color.png" alt="before">Ремонт ванной под ключ в хрущевке г. Киев</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-3-full.jpg">
-              <img src="img/block3-3.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Ремонт ванной под ключ в хрущевке г. Киев</p>
+              <img src="img/block3-3.png" class="gallery-img" alt="Ремонт ванной под ключ в хрущевке г. Киев">
+              <p><img src="img/before-line-color.png" alt="before">Ремонт ванной под ключ в хрущевке г. Киев</p>
             </a>
           </div>
         </div>
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-3-full.jpg">
-              <img src="img/block3-3.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Отделочные работы в квартире, ул. Суслова 16</p>
+              <img src="img/block3-3.png" class="gallery-img" alt="Отделочные работы в квартире, ул. Суслова 16">
+              <p><img src="img/before-line-color.png" alt="before">Отделочные работы в квартире, ул. Суслова 16</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-1-full.jpg">
-              <img src="img/block3-1.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Отделочные работы в квартире, ул. Суслова 16</p>
+              <img src="img/block3-1.png" class="gallery-img" alt="Отделочные работы в квартире, ул. Суслова 16">
+              <p><img src="img/before-line-color.png" alt="before">Отделочные работы в квартире, ул. Суслова 16</p>
             </a>
           </div>
         </div>
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-1-full.jpg">
-              <img src="img/block3-1.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Внутренняя отделка в г. Одесса под ключ</p>
+              <img src="img/block3-1.png" class="gallery-img" alt="Внутренняя отделка в г. Одесса под ключ">
+              <p><img src="img/before-line-color.png" alt="before">Внутренняя отделка в г. Одесса под ключ</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-1-full.jpg">
-              <img src="img/block3-1.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Внутренняя отделка в г. Одесса под ключ</p>
+              <img src="img/block3-1.png" class="gallery-img" alt="Внутренняя отделка в г. Одесса под ключ">
+              <p><img src="img/before-line-color.png" alt="before">Внутренняя отделка в г. Одесса под ключ</p>
             </a>
           </div>
 
@@ -242,28 +243,28 @@
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-2-full.jpg">
-              <img src="img/block3-2.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Ремонт ванной под ключ в хрущевке г. Киев</p>
+              <img src="img/block3-2.png" class="gallery-img" alt="Ремонт ванной под ключ в хрущевке г. Киев">
+              <p><img src="img/before-line-color.png" alt="before">Ремонт ванной под ключ в хрущевке г. Киев</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-2-full.jpg">
-              <img src="img/block3-2.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Ремонт ванной под ключ в хрущевке г. Киев</p>
+              <img src="img/block3-2.png" class="gallery-img" alt="Ремонт ванной под ключ в хрущевке г. Киев">
+              <p><img src="img/before-line-color.png" alt="before">Ремонт ванной под ключ в хрущевке г. Киев</p>
             </a>
           </div>
         </div>
         <div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-3-full.jpg">
-              <img src="img/block3-3.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Отделочные работы в квартире, ул. Суслова 16</p>
+              <img src="img/block3-3.png" class="gallery-img" alt="Отделочные работы в квартире, ул. Суслова 16">
+              <p><img src="img/before-line-color.png" alt="before">Отделочные работы в квартире, ул. Суслова 16</p>
             </a>
           </div>
           <div class="div">
             <a data-fancybox="gallery" href="img/block3-3-full.jpg">
-              <img src="img/block3-3.png" class="gallery-img" alt="">
-              <p><img src="img/before-line-color.png"></img>Отделочные работы в квартире, ул. Суслова 16</p>
+              <img src="img/block3-3.png" class="gallery-img" alt="Отделочные работы в квартире, ул. Суслова 16">
+              <p><img src="img/before-line-color.png" alt="before">Отделочные работы в квартире, ул. Суслова 16</p>
             </a>
           </div>
         </div>
@@ -304,66 +305,84 @@
       <div class="price-main">
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-1.svg" alt="">
+            <img src="img/svg/block4-1.svg" alt="Дизайн проект">
           </div>
-          <h3>Дизайн проект</h3>
-          <p>консультации и авторский <br>надзор</p>
+          <div class="price-info">
+            <h3>Дизайн проект</h3>
+            <p>консультации и авторский <br>надзор</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-2.svg" alt="">
+            <img src="img/svg/block4-2.svg" alt="Электрика">
           </div>
-          <h3>Электрика</h3>
-          <p>все виды электромонтажных <br>работ</p>
+          <div class="price-info">
+            <h3>Электрика</h3>
+            <p>все виды электромонтажных <br>работ</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-3.svg" alt="">
+            <img src="img/svg/block4-3.svg" alt="Сантехника">
           </div>
-          <h3>Сантехника</h3>
-          <p>разводка и установка сантических <br>приборов</p>
+          <div class="price-info">
+            <h3>Сантехника</h3>
+            <p>разводка и установка сантических <br>приборов</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-4.svg" alt="">
+            <img src="img/svg/block4-4.svg" alt="Малярные работы">
           </div>
-          <h3>Малярные работы</h3>
-          <p>Все виды финишной отделки <br> подготовленных поверхностей</p>
+          <div class="price-info">
+            <h3>Малярные работы</h3>
+            <p>Все виды финишной отделки</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-5.svg" alt="">
+            <img src="img/svg/block4-5.svg" alt="Штукатурка">
           </div>
-          <h3>Штукатурка</h3>
-          <p>Отделка поверхностей штукатурной <br>смесью</p>
+          <div class="price-info">
+            <h3>Штукатурка</h3>
+            <p>Отделка поверхностей штукатурной <br>смесью</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-6.svg" alt="">
+            <img src="img/svg/block4-6.svg" alt="Гипсокартон">
           </div>
-          <h3>Гипсокартон</h3>
-          <p>монтаж гипсокартона для потолка и <br>перегородок</p>
+          <div class="price-info">
+            <h3>Гипсокартон</h3>
+            <p>монтаж гипсокартона для потолка и <br>перегородок</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-7.svg" alt="">
+            <img src="img/svg/block4-7.svg" alt="Стяжка">
           </div>
-          <h3>Стяжка</h3>
-          <p>выравнивание поверхности пола <br>перед заменой покрытия</p>
+          <div class="price-info">
+            <h3>Стяжка</h3>
+            <p>выравнивание поверхности пола <br>перед заменой покрытия</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-8.svg" alt="">
+            <img src="img/svg/block4-8.svg" alt="Плитка">
           </div>
-          <h3>Плитка</h3>
-          <p>все виды плиточно - отделочных работ</p>
+          <div class="price-info">
+            <h3>Плитка</h3>
+            <p>все виды плиточно - отделочных работ</p>
+          </div>
         </div>
         <div class="price-item">
           <div class="img-wrapper">
-            <img src="img/svg/block4-9.svg" alt="">
+            <img src="img/svg/block4-9.svg" alt="Все">
           </div>
-          <h3>Все</h3>
-          <p class="special">черновые строительные материалы</p>
+          <div class="price-info">
+            <h3>Все</h3>
+            <p class="special">черновые строительные материалы</p>
+          </div>
         </div>
       </div>
 
@@ -385,22 +404,22 @@
 
       <div class="owl-carousel" id="second-carousel">
         <div class="review-item">
-          <img src="img/review-ell.png" alt="">
+          <img src="img/review-ell.png" alt="Отзыв">
           <h3>Семья Безруковых Андрей и Алина</h3>
           <p>Профессиональная работа без посредников и лишних наценок. Высокая квалификация, современное<br> оборудование, честность к клиенту, демократичные цены и индивидуальный подход отличают эту компанию от <br>остальных. Рекомендуем!!!</p>
         </div>
         <div class="review-item">
-          <img src="img/review-ell.png" alt="">
+          <img src="img/review-ell.png" alt="Отзыв">
           <h3>Семья Руковых Андрей и Алина</h3>
           <p>Профессиональная работа без посредников и лишних наценок. Высокая квалификация, современное<br> оборудование, честность к клиенту, демократичные цены и индивидуальный подход отличают эту компанию от <br>остальных. Рекомендуем!!!</p>
         </div>
         <div class="review-item">
-          <img src="img/review-ell.png" alt="">
+          <img src="img/review-ell.png" alt="Отзыв">
           <h3>Семья Непальцевых Андрей и Алина</h3>
           <p>Профессиональная работа без посредников и лишних наценок. Высокая квалификация, современное<br> оборудование, честность к клиенту, демократичные цены и индивидуальный подход отличают эту компанию от <br>остальных. Рекомендуем!!!</p>
         </div>
         <div class="review-item">
-          <img src="img/review-ell.png" alt="">
+          <img src="img/review-ell.png" alt="Отзыв">
           <h3>Семья Пальцевых Андрей и Алина</h3>
           <p>Профессиональная работа без посредников и лишних наценок. Высокая квалификация, современное<br> оборудование, честность к клиенту, демократичные цены и индивидуальный подход отличают эту компанию от <br>остальных. Рекомендуем!!!</p>
         </div>
@@ -437,7 +456,7 @@
           </div>
           <div class="divider">
             <i class="fa fa-plus" data-toggle="collapse" data-target="#card-1"></i>
-            <i class="fa fa-minus hidden" data-toggle="collapse" data-target="#card-1"></i>
+            <i class="fa fa-minus" data-toggle="collapse" data-target="#card-1"></i>
           </div>
         </div>
         <div class="card card-2">
@@ -455,7 +474,7 @@
           </div>
           <div class="divider">
             <i class="fa fa-plus" data-toggle="collapse" data-target="#card-2"></i>
-            <i class="fa fa-minus hidden" data-toggle="collapse" data-target="#card-2"></i>
+            <i class="fa fa-minus" data-toggle="collapse" data-target="#card-2"></i>
           </div>
         </div>
         <div class="card">
@@ -473,7 +492,7 @@
           </div>
           <div class="divider">
             <i class="fa fa-plus" data-toggle="collapse" data-target="#card-3"></i>
-            <i class="fa fa-minus hidden" data-toggle="collapse" data-target="#card-3"></i>
+            <i class="fa fa-minus" data-toggle="collapse" data-target="#card-3"></i>
           </div>
         </div>
         <div class="card">
@@ -491,7 +510,7 @@
           </div>
           <div class="divider">
             <i class="fa fa-plus" data-toggle="collapse" data-target="#card-4"></i>
-            <i class="fa fa-minus hidden" data-toggle="collapse" data-target="#card-4"></i>
+            <i class="fa fa-minus" data-toggle="collapse" data-target="#card-4"></i>
           </div>
         </div>
         <div class="call-block">
@@ -536,49 +555,49 @@
         <div class="owl-carousel" id="third-carousel">
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-1.png" alt="">
+              <img src="img/mag-1.png" alt="Журнал">
             </div>
             Журнал<br> «Salon Interior»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-2.png" alt="">
+              <img src="img/mag-2.png" alt="Журнал">
             </div>
             Журнал<br> «Domus Design»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-3.png" alt="">
+              <img src="img/mag-3.png" alt="Журнал">
             </div>
             Книга<br> «Minimalist Living Spaces»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-4.png" alt="">
+              <img src="img/mag-4.png" alt="Журнал">
             </div>
             Журнал<br> «Interior architecture»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-1.png" alt="">
+              <img src="img/mag-1.png" alt="Журнал">
             </div>
             Журнал<br> «Salon Interior»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-2.png" alt="">
+              <img src="img/mag-2.png" alt="Журнал">
             </div>
             Журнал<br> «Domus Design»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-3.png" alt="">
+              <img src="img/mag-3.png" alt="Журнал">
             </div>
             Книга<br> «Minimalist Living Spaces»
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" class="press-item">
             <div class="img-wrapper">
-              <img src="img/mag-4.png" alt="">
+              <img src="img/mag-4.png" alt="Журнал">
             </div>
             Журнал<br> «Interior architecture»
           </a>
@@ -589,8 +608,6 @@
   </div>
 
   <div id="map" class="map">
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1374.3090652161304!2d30.759076!3d46.456263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633dfdeca1c73%3A0x2455830502763fa8!2z0KTRgNCw0L3RhtGD0LfRgdC60LjQuSDQsdGD0LsuLCAyMiwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1543919361653"
-      allowfullscreen></iframe> -->
   </div>
 
   <footer>
@@ -612,7 +629,7 @@
     </div>
   </footer>
 
-  <div class="modal fade" id="question-modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+  <div class="modal fade" id="question-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -642,7 +659,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="call-modal" tabindex="-2" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+  <div class="modal fade" id="call-modal" tabindex="-2" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -659,7 +676,7 @@
           <form action="#">
             <div class="input-wrap">
               <i>*</i>
-              <input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name" required>
+              <input type="text" class="form-control" id="name-call" placeholder="Ваше имя" name="name" required>
             </div>
             <div class="input-wrap">
               <i>*</i>
@@ -679,7 +696,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="thank-modal" tabindex="-3" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+  <div class="modal fade" id="thank-modal" tabindex="-3" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -692,176 +709,13 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzKfGSJ0Yf798516fhFuurwAmljzYMzQA&callback=initMap" async defer></script>
   <script src="js/scripts.min.js"></script>
 
-  <script>
-    function initMap() {
-      // Map options
-      var options = {
-        center: {
-          lat: 46.48272,
-          lng: 30.73560
-        },
-        zoom: 17,
-        styles: [{
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#dcdcdc"
-          }]
-        }, {
-          "featureType": "administrative",
-          "stylers": [{
-            "saturation": "-100"
-          }]
-        }, {
-          "featureType": "administrative.province",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "landscape",
-          "stylers": [{
-            "saturation": -100
-          }, {
-            "lightness": 65
-          }, {
-            "visibility": "on"
-          }]
-        }, {
-          "featureType": "poi",
-          "stylers": [{
-            "saturation": -100
-          }, {
-            "lightness": "50"
-          }, {
-            "visibility": "simplified"
-          }]
-        }, {
-          "featureType": "poi.business",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "poi.park",
-          "elementType": "labels.text",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "road",
-          "stylers": [{
-            "saturation": "-100"
-          }]
-        }, {
-          "featureType": "road",
-          "elementType": "labels.icon",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "road.arterial",
-          "stylers": [{
-            "color": "#f0f0f0"
-          }, {
-            "lightness": 30
-          }]
-        }, {
-          "featureType": "road.arterial",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#dcdcdc"
-          }]
-        }, {
-          "featureType": "road.arterial",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#aaaaaa"
-          }]
-        }, {
-          "featureType": "road.highway",
-          "stylers": [{
-            "visibility": "simplified"
-          }]
-        }, {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#c8c8c8"
-          }]
-        }, {
-          "featureType": "road.local",
-          "stylers": [{
-            "lightness": "40"
-          }]
-        }, {
-          "featureType": "road.local",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#dcdcdc"
-          }]
-        }, {
-          "featureType": "transit",
-          "stylers": [{
-            "saturation": -100
-          }]
-        }, {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#e6e6e6"
-          }, {
-            "hue": "#ffff00"
-          }, {
-            "saturation": -95
-          }, {
-            "lightness": -25
-          }]
-        }, {
-          "featureType": "water",
-          "elementType": "labels",
-          "stylers": [{
-            "saturation": -100
-          }, {
-            "lightness": -25
-          }]
-        }]
-
-      }
-
-      // New map
-      var map = new google.maps.Map(document.getElementById('map'), options);
-
-      // Listen for click on map
-      google.maps.event.addListener(map, 'click', function(event) {
-        // Add marker
-        addMarker({
-          coords: event.latLng
-        });
-      });
-      var marker = new google.maps.Marker({
-        position: {
-          lat: 46.48272,
-          lng: 30.73560
-        },
-        map: map,
-        icon: 'img/map-marker.png',
-      });
-
-      var infoWindow = new google.maps.InfoWindow({
-        content: '<div class="marker-h"><h4>Одесса</h4><p>ТЦ Афина, Греческая площадь, 3/4, <br/> 7 этаж, офис 766. </p></div> '
-      })
-
-      marker.addListener('click', function() {
-        infoWindow.open(map, marker);
-      })
-
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzKfGSJ0Yf798516fhFuurwAmljzYMzQA&callback=initMap" async defer></script>
 
 
 </body>

@@ -1,6 +1,39 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 1380px)
+
+	.subtitle
+		.description
+			&:before
+				left: 44%
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 1120px)
+
+	.subtitle
+		.description
+			&:before
+				left: 44%
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 768px)
+	.subtitle
+		.description
+			&:before
+				left: 40%
+				width: 200px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 568px)
+	.subtitle
+		.description
+			&:before
+				left: 38%
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 480px)
+	.subtitle
+		.description
+			&:before
+				left: 36%
+
+
 @media only screen and (max-width : 1380px)
 	.wrapper
 		max-width: 1120px
@@ -10,10 +43,12 @@
 			padding: 0 15px
 			.nav-block
 				.menu
-					.list-inline-item
+					.menu-item
 						margin-right: 30px
 						&:nth-child(2)
 							margin-right: 30px	
+		.main-block
+			background-position: 50% 82%
 	
 	.portfolio
 		padding-bottom: 170px
@@ -31,9 +66,7 @@
 					top: 682px
 			.owl-dots
 				margin-top: 60px
-				// margin-top: 30px
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 
 	header
@@ -45,7 +78,7 @@
 			.nav-block
 				.menu
 					margin-left: 20px
-					.list-inline-item
+					.menu-item
 						margin-right: 28px
 						&:nth-child(2)
 							margin-right: 28px	
@@ -96,26 +129,27 @@
 				&:after
 					right: 11%
 
-/* Medium Devices, Desktops */
+
 @media only screen and (max-width : 992px)
-	/**/
+	
 	header
 		.main-navigation
 			flex-direction: column
 			.header-top
 				justify-content: space-between
 			.header-bottom
-				margin: 40px 0 10px
+				margin: 25px 0 10px
 				.info-block
 					margin-left: 0
 			.nav-block
 				.menu
 					border-right: none
-					.list-inline-item
-						padding-top: 36px
-						padding-bottom: 0
+					.menu-item
 						margin-right: 0
 						margin-left: 30px
+						a
+							padding-top: 36px
+							padding-bottom: 0
 						&:nth-child(2)
 							margin-right: 0
 			.btn.btn-backorder
@@ -137,7 +171,7 @@
 		.inputs-group
 			width: 670px
 
-/* Small Devices, Tablets */
+
 @media only screen and (max-width : 768px)
 	header
 		.main-form
@@ -149,6 +183,8 @@
 			display: none
 		.main
 			padding: 0 30px
+			.sub-price
+				display: block
 	.subtitle
 		.description
 			&:before
@@ -215,30 +251,44 @@
 		padding-top: 80px
 		.title
 			padding-bottom: 30px
+		.price-info
+			margin-left: 20px
+			min-width: 260px
 		.price-main
 			// display: none
 			flex-direction: row
+			max-width: 50%
 			.price-item
 				border: none
 				width: 100%
-				padding: 8px 30px
+				padding: 12px 30px
+				flex-direction: row
+				border-bottom: 1px solid #e5e5e5
+				justify-content: center
 				.img-wrapper
-					display: none
+					// display: none
+					min-width: 65px
+					display: flex
+					align-items: center
+					justify-content: center
 				p
-					display: none
+					text-align: left
+					// display: none
+					margin-bottom: 0
 				h3
 					font-size: 20px
-				&:last-child
-					h3 
-						display: none
-				.special
-					display: block
-					font-family: HelveticaNeueCyrBold,sans-serif
-					font-size: 20px
-					color: #3f3f3f
-					margin-bottom: 11px
-					&:first-letter
-						text-transform: uppercase
+					text-align: left
+				// &:last-child
+				// 	h3 
+				// 		display: none
+				// .special
+				// 	display: block
+				// 	font-family: HelveticaNeueCyrBold,sans-serif
+				// 	font-size: 20px
+				// 	color: #3f3f3f
+				// 	margin-bottom: 11px
+				// 	&:first-letter
+				// 		text-transform: uppercase
 
 
 	.review
@@ -318,15 +368,16 @@
 		.bar2,
 		.bar3
 			width: 35px
-			height: 5px
+			height: 4px
 			background-color: #333
 			margin: 6px 0
 			transition: 0.4s
+			display: block
 
 	.change
 		.bar1
-    		-webkit-transform: rotate(-45deg) translate(-9px, 6px)
-    		transform: rotate(-45deg) translate(-9px, 6px)
+    		-webkit-transform: rotate(-45deg) translate(-7px, 6px)
+    		transform: rotate(-45deg) translate(-6px, 6px)
 		.bar2
 			opacity: 0
 		.bar3 
@@ -355,7 +406,7 @@
 		.main-block
 			margin-top: 80px
 
-/* Extra Small Devices, Phones */
+
 @media only screen and (max-width : 540px)
 
 	header
@@ -371,7 +422,7 @@
 			.nav-block
 				.menu
 					margin-left: 0
-					.list-inline-item
+					.menu-item
 						margin: 0 20px
 						padding-top: 25px
 						&:nth-child(2)
@@ -380,13 +431,16 @@
 		font-size: 18px
 
 	.price-block
+
 		.price-main
+			max-width: 100%
 			h3 
 				margin-bottom: 8px
 			.price-item
-				.special
-					font-size: 18px
-					margin-bottom: 8px
+				// .special
+				// 	font-size: 18px
+				// 	margin-bottom: 8px
+				padding: 12px 15px
 				h3
 					font-size: 18px
 
@@ -418,13 +472,15 @@
 			button.owl-next
 				transform: scale(.76)
 	
-/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	header
+		.main-block
+			.main
+				font-size: 30px
 		.main-navigation
 			.nav-block
 				.menu
-					.list-inline-item
+					.menu-item
 						margin: 0 5px
 						&:nth-child(2)
 							margin-right: 5px
@@ -467,24 +523,46 @@
 					right: -25%
 
 
-/* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+	header
+		.main-block
+			.main
+				.sub-price
+					font-size: 28px
+	.price-block
+		.price-main
+			.price-item
+				justify-content: flex-start
+				p
+					min-height: 38px
+					br
+						display: none
+		.price-info
+			min-width: auto
+
+
+
 @media only screen and (max-width : 380px)
 	header
 		.main-navigation
 			.header-bottom
 				.info-block
 					margin: 0 0 15px
-		.main
-			font-size: 24px
 		.main-block
 			padding-top: 60px
 			min-height: 450px
-			// background-position: top center
+			.main
+				font-size: 24px
 
 	.team
 		.call-block
 			.btn
 				padding: 22px 60px 21px
+
+@media only screen and (max-width: 320px)
+	.price-block
+		.price-info
+			min-width: auto
 
 @media only screen and (max-height: 600px)
 	.modal
@@ -508,6 +586,7 @@
 			padding: 25px 0 15px
 
 @media only screen and (max-height: 420px)
+
 	.modal
 		.modal-header
 			.modal-title
